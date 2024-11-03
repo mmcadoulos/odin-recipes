@@ -1,6 +1,12 @@
 * {
   color: blueviolet;
   font-family: Monaco, "Lucida Console", monospace;
+  /* for example of box model, uncomment lines 5–6 */
+  /* border-style: solid;
+  border-color: green; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
