@@ -13,9 +13,9 @@ body {
   background-image: url(resources/images/spikes.webp);
 }
 
-ol {
-  /* list-style-position: inside; */
-}
+/* ol {
+  list-style-position: inside;
+} */
 
 ol li {
   list-style-type: lower-greek;
