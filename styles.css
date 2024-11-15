@@ -5,12 +5,23 @@
   /* border-style: solid;
   border-color: green; */
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 1%;
   padding: 0;
 }
 
 body {
   background-image: url(resources/images/spikes.webp);
+}
+
+ol {
+  /* list-style-position: inside; */
+}
+
+ol li {
+  list-style-type: lower-greek;
+  /* list-style: lower-greek inside; */
+  /* position: relative; */
+  margin: 0 1.7em;
 }
 
 h1.bordered {
@@ -20,6 +31,9 @@ h1.bordered {
 
 img.bordered {
     padding: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .bordered {
@@ -31,10 +45,35 @@ img.bordered {
     margin-top: 2.5%;
 }
 
+.link-list {
+list-style: none;
+}
+
 .link-list .link {
+  display: inline;
+  background-color: rgba(227, 233, 233, 0.63);
+  border-style: double;
+  border-color: blue;
+  width: 250px;
+  text-align: center;
+  /* comment out preceding for old list */
   margin-bottom: 5px;
   margin-left: 10px;
   padding: 5px;
 }
 
+.link-list .link:hover, .link-list .link:hover a {
+  background-color: blueviolet;
+  color: whitesmoke;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bolder;
+} 
 
+/* .banana {
+  border: 5px solid black;
+  margin-top: 100px;
+  width: 250px;
+  height: 100px;
+  margin: auto;
+} */
