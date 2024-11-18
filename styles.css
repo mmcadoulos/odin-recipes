@@ -1,9 +1,6 @@
 * {
   color: blueviolet;
   font-family: Monaco, "Lucida Console", monospace;
-  /* for example of box model, uncomment lines 5–6 */
-  /* border-style: solid;
-  border-color: green; */
   box-sizing: border-box;
   margin: 0 1%;
   padding: 0;
@@ -13,14 +10,8 @@ body {
   background-image: url(resources/images/spikes.webp);
 }
 
-/* ol {
-  list-style-position: inside;
-} */
-
 ol li {
   list-style-type: lower-greek;
-  /* list-style: lower-greek inside; */
-  /* position: relative; */
   margin: 0 1.7em;
 }
 
@@ -30,23 +21,24 @@ h1.bordered {
 }
 
 img.bordered {
-    padding: 0px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  padding: 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bordered {
-    border-color: blue;
-    border-style: double;
-    background-color: whitesmoke;
-    border-width: 10px;
-    padding: 10px;
-    margin-top: 2.5%;
+  border-color: blue;
+  border-style: double;
+  background-color: whitesmoke;
+  border-width: 10px;
+  padding: 10px;
+  margin-top: 2.5%;
 }
 
 .link-list {
-list-style: none;
+  list-style: none;
+  display: flex;
 }
 
 .link-list .link {
@@ -56,24 +48,20 @@ list-style: none;
   border-color: blue;
   width: 250px;
   text-align: center;
+  /* flex: auto; */
+  /* flex: initial; */
+  flex: 1 1 auto;
+  min-width: 200px;
   /* comment out preceding for old list */
   margin-bottom: 5px;
   margin-left: 10px;
   padding: 5px;
 }
 
-.link-list .link:hover, .link-list .link:hover a {
+.link-list .link:hover,
+.link-list .link:hover a {
   background-color: blueviolet;
   color: whitesmoke;
-  cursor: pointer;
   text-decoration: none;
   font-weight: bolder;
-} 
-
-/* .banana {
-  border: 5px solid black;
-  margin-top: 100px;
-  width: 250px;
-  height: 100px;
-  margin: auto;
-} */
+}
